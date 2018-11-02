@@ -2,4 +2,8 @@ version: '3'
 
 services:
   ansible: 
-    .build: ./ansible
+    build: ansible/
+    hostname: control
+    ports:
+      - 2200:22
+    
